@@ -1,0 +1,316 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "array",
+  "additionalItems": true,
+  "items": {
+    "anyOf": [
+      {
+        "type": "object",
+        "required": [
+          "data"
+        ],
+        "properties": {
+          "data": {
+            "type": "object",
+            "required": [
+              "BrowseCollectionsV1Resource"
+            ],
+            "properties": {
+              "BrowseCollectionsV1Resource": {
+                "type": "object",
+                "required": [
+                  "byCollections",
+                  "__typename"
+                ],
+                "properties": {
+                  "byCollections": {
+                    "type": "object",
+                    "required": [
+                      "elements",
+                      "paging",
+                      "__typename"
+                    ],
+                    "properties": {
+                      "elements": {
+                        "type": "array",
+                        "additionalItems": true,
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "required": [
+                                "label",
+                                "id",
+                                "linkedCollectionPageMetadata",
+                                "debug",
+                                "entries",
+                                "courses",
+                                "s12ns",
+                                "__typename"
+                              ],
+                              "properties": {
+                                "label": {
+                                  "type": "string"
+                                },
+                                "id": {
+                                  "type": "string"
+                                },
+                                "linkedCollectionPageMetadata": {
+                                  "type": "null"
+                                },
+                                "debug": {
+                                  "type": "null"
+                                },
+                                "entries": {
+                                  "type": "array",
+                                  "additionalItems": true,
+                                  "items": {
+                                    "anyOf": [
+                                      {
+                                        "type": "object",
+                                        "required": [
+                                          "id",
+                                          "courseId",
+                                          "onDemandSpecializationId",
+                                          "resourceName",
+                                          "score",
+                                          "isPartOfCourseraPlus",
+                                          "isFreeCertificate",
+                                          "__typename"
+                                        ],
+                                        "properties": {
+                                          "id": {
+                                            "type": "string"
+                                          },
+                                          "courseId": {
+                                            "type": "null"
+                                          },
+                                          "onDemandSpecializationId": {
+                                            "type": "string"
+                                          },
+                                          "resourceName": {
+                                            "type": "string"
+                                          },
+                                          "score": {
+                                            "type": "null"
+                                          },
+                                          "isPartOfCourseraPlus": {
+                                            "type": "boolean"
+                                          },
+                                          "isFreeCertificate": {
+                                            "type": "boolean"
+                                          },
+                                          "__typename": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "additionalProperties": false
+                                      }
+                                    ]
+                                  }
+                                },
+                                "courses": {
+                                  "type": "object",
+                                  "required": [
+                                    "elements",
+                                    "__typename"
+                                  ],
+                                  "properties": {
+                                    "elements": {
+                                      "type": "array",
+                                      "additionalItems": true,
+                                      "items": {
+                                      }
+                                    },
+                                    "__typename": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "additionalProperties": false
+                                },
+                                "s12ns": {
+                                  "type": "object",
+                                  "required": [
+                                    "elements",
+                                    "__typename"
+                                  ],
+                                  "properties": {
+                                    "elements": {
+                                      "type": "array",
+                                      "additionalItems": true,
+                                      "items": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "required": [
+                                              "name",
+                                              "id",
+                                              "slug",
+                                              "logo",
+                                              "courseIds",
+                                              "partners",
+                                              "metadata",
+                                              "productVariant",
+                                              "__typename"
+                                            ],
+                                            "properties": {
+                                              "name": {
+                                                "type": "string"
+                                              },
+                                              "id": {
+                                                "type": "string"
+                                              },
+                                              "slug": {
+                                                "type": "string"
+                                              },
+                                              "logo": {
+                                                "type": "string"
+                                              },
+                                              "courseIds": {
+                                                "type": "array",
+                                                "additionalItems": true,
+                                                "items": {
+                                                  "anyOf": [
+                                                    {
+                                                      "type": "string"
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "partners": {
+                                                "type": "object",
+                                                "required": [
+                                                  "elements",
+                                                  "__typename"
+                                                ],
+                                                "properties": {
+                                                  "elements": {
+                                                    "type": "array",
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                      "anyOf": [
+                                                        {
+                                                          "type": "object",
+                                                          "required": [
+                                                            "id",
+                                                            "name",
+                                                            "squareLogo",
+                                                            "classLogo",
+                                                            "logo",
+                                                            "__typename"
+                                                          ],
+                                                          "properties": {
+                                                            "id": {
+                                                              "type": "string"
+                                                            },
+                                                            "name": {
+                                                              "type": "string"
+                                                            },
+                                                            "squareLogo": {
+                                                              "type": "string"
+                                                            },
+                                                            "classLogo": {
+                                                              "type": "string"
+                                                            },
+                                                            "logo": {
+                                                              "type": "string"
+                                                            },
+                                                            "__typename": {
+                                                              "type": "string"
+                                                            }
+                                                          },
+                                                          "additionalProperties": false
+                                                        }
+                                                      ]
+                                                    }
+                                                  },
+                                                  "__typename": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "additionalProperties": false
+                                              },
+                                              "metadata": {
+                                                "type": "object",
+                                                "required": [
+                                                  "headerImage",
+                                                  "level",
+                                                  "__typename"
+                                                ],
+                                                "properties": {
+                                                  "headerImage": {
+                                                    "type": "string"
+                                                  },
+                                                  "level": {
+                                                    "type": "string"
+                                                  },
+                                                  "__typename": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "additionalProperties": false
+                                              },
+                                              "productVariant": {
+                                                "type": "string"
+                                              },
+                                              "__typename": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "additionalProperties": false
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "__typename": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "additionalProperties": false
+                                },
+                                "__typename": {
+                                  "type": "string"
+                                }
+                              },
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      },
+                      "paging": {
+                        "type": "object",
+                        "required": [
+                          "total",
+                          "__typename"
+                        ],
+                        "properties": {
+                          "total": {
+                            "type": "integer"
+                          },
+                          "__typename": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      "__typename": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "__typename": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  }
+}

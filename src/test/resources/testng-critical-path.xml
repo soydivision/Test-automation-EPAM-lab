@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Critical path tests suite">
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+    </listeners>
+    <test name="Critical path" parallel="classes" thread-count="3">
+        <groups>
+            <run>
+                <include name="critical path"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.epam.tests.*"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,11 @@
+[
+  {
+    "operationName": "CollectionRecommendationsQuery",
+    "variables": {
+      "contextType": "PAGE",
+      "contextId": "search-zero-state",
+      "numEntriesPerCollection": 10
+    },
+    "query": "query CollectionRecommendationsQuery($contextType: String!, $contextId: String!, $numEntriesPerCollection: Int) {  BrowseCollectionsV1Resource {    byCollections(contextType: $contextType, contextId: $contextId, numEntriesPerCollection: $numEntriesPerCollection) {      elements {        id        entries {          id          __typename        }        courses {          elements {            ...CourseFragment            __typename          }          __typename        }        s12ns {          elements {            ...S12nFragment            __typename          }          __typename        }        __typename      }      __typename    }    __typename  }}fragment CourseFragment on CoursesV1 {  id  slug  photoUrl  description  name  courseDerivatives {    id    averageFiveStarRating    __typename  }  partners {    elements {      id      name      squareLogo      __typename    }    __typename  }  __typename}fragment S12nFragment on OnDemandSpecializationsV1 {  id  slug  photoUrl: logo  description  derivative {    id    averageFiveStarRating    __typename  }  name  partners {    elements {      id      name      squareLogo      __typename    }    __typename  }  __typename}"
+  }
+]
